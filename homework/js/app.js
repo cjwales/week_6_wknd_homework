@@ -14,6 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     newDiv.appendChild(genreHeading);
     genreHeading.textContent = event.target.genre.value;
 
+    const digitalHeading = document.createElement('h5');
+    newDiv.appendChild(digitalHeading);
+    digitalHeading.textContent = event.target.digital.value;
+
+    const physicalHeading = document.createElement('h5');
+    newDiv.appendChild(physicalHeading);
+    physicalHeading.textContent = event.target.physical.value;
+
     const ratingParagraph = document.createElement('p');
     newDiv.appendChild(ratingParagraph);
     ratingParagraph.textContent = event.target.rating.value;
