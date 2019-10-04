@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     collectionList.appendChild(newDiv);
 
+    const deleteAllButton = document.querySelector('#delete-all-button');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
 
   };
 
@@ -28,3 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
+const handleDeleteAllClick = function (event) {
+  const gameCollection = document.querySelector('#game-collection');
+  gameCollection.innerHTML = '';
+};
