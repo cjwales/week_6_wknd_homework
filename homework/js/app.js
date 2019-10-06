@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const newDiv = document.createElement('div');
     const collectionList = document.querySelector('#game-collection');
+    newDiv.classList.add('game-item');
 
     const titleHeading = document.createElement('h3');
     newDiv.appendChild(titleHeading);
@@ -14,13 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     newDiv.appendChild(genreHeading);
     genreHeading.textContent = event.target.genre.value;
 
-    const digitalHeading = document.createElement('h5');
-    newDiv.appendChild(digitalHeading);
-    digitalHeading.textContent = event.target.digital.value;
-
-    const physicalHeading = document.createElement('h5');
-    newDiv.appendChild(physicalHeading);
-    physicalHeading.textContent = event.target.physical.value;
+    const typeHeading = document.createElement('h5');
+    newDiv.appendChild(typeHeading);
+    typeHeading.textContent = event.target.type.value;
 
     const ratingParagraph = document.createElement('p');
     newDiv.appendChild(ratingParagraph);
